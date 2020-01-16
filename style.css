@@ -63,4 +63,5 @@ input {
 
 .win-or-lose {
     visibility: hidden;
+    word-spacing: 3;
 }
