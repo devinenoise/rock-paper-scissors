@@ -28,7 +28,7 @@
     <main>
         <section>
             <p>
-                <div id=button-container>
+                <div id=radio-container>
                     <label>
                         <input type="radio" name="human-choice" value="rock" checked>
                         <img class="radio-image" src="/rock.jpg" alt="rock">
@@ -45,14 +45,18 @@
             </div>
 
             <p id="record">
-                <span>Wins: <span class="count" id="win-count">0</span></span>
-                <span>Losses: <span class="count" id="loss-count">0</span></span>
-                <span>Draws: <span class="count" id="draw-count">0</span></span>
+                <span>Wins: <span class="count" id="win-count">0</span>
+                    <span>Losses: <span class="count" id="loss-count">0</span>
+                        <span>Draws: <span class="count" id="draw-count">0</span>
             </p>
         </section>
 
         <p><button id="play-button">Play</button></p>
 
+        <p class="win-or-lose">
+            <span>Computer chose:</span><span id="computer-throw"></span><span>You: </span>
+            <span id="results"></span>
+        </p>
 
         <script type="module" src="app.js"></script>
     </main>

@@ -17,7 +17,6 @@ body {
 }
 
 button {
-    border: solid 4px steelblue;
     text-transform: uppercase;
     cursor: pointer;
     position: relative;
@@ -26,7 +25,10 @@ button {
     height: 60px;
     background: white;
     font-weight: 700;
-    
+}
+
+button:hover {
+    border: solid 4px steelblue;
 }
 
 .list {
@@ -59,3 +61,6 @@ input {
     padding: 20px;
 }
 
+.win-or-lose {
+    visibility: hidden;
+}
