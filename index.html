@@ -51,14 +51,15 @@
             </p>
         </section>
 
-        <p><button id="play-button">Play</button></p>
-
-        <p id="win-or-lose">
-            <span>Computer chose </span><span id="computer-throw"></span>
-            <div></div>
-            <span> You </span>
-            <span id="results"></span>
+        <p><button id="play-button">Play</button>
+            <span><button id="reset-button">Reset</button></span>
         </p>
+
+        <div id="game-display" class="hidden">
+            <span id="computer-throw"></span>
+            <div></div>
+            <span id="match-results"></span>
+        </div>
 
         <script type="module" src="app.js"></script>
     </main>

@@ -61,7 +61,6 @@ input {
     padding: 20px;
 }
 
-.win-or-lose {
-    visibility: hidden;
-    word-spacing: 3;
+.hidden {
+    display: none;
 }

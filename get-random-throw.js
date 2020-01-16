@@ -18,9 +18,9 @@ export function checkResult(player, computer) {
         return 'draw';
     } if (player === 'rock' && computer === 'scissors') {
         return 'win';
-    } else if (player === 'paper' && computer === 'rock') {
+    } if (player === 'paper' && computer === 'rock') {
         return 'win';
-    } else if (player === 'scissors' && computer === 'paper') {
+    } if (player === 'scissors' && computer === 'paper') {
         return 'win';
     } else return 'lose';
 }
