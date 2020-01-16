@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    background-color: rgb(124, 90, 124);
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    font-size: 24px;
+}
+
+#rules {
+    display:flex;
+    justify-content: center;
+    color: white;
+}
+
+button {
+    border: solid 4px steelblue;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    font-size: 22px;
+    width: 200px;
+    height: 60px;
+    background: white;
+    font-weight: 700;
+    
+}
+
+.list {
+    display:flex;
+    padding: 20px;
+}
+
+.radio-image {
+    border: 10px solid transparent;
+    border-radius: 100%;
+    width: 100px;
+    cursor: pointer;
+    margin: 60px;
+}
+
+.radio-image:hover {
+    opacity: .8;
+}
+
+input:checked + .radio-image {
+    border: 10px solid steelblue;
+}
+
+input {
+    display:none;
+}
+
+.count {
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
