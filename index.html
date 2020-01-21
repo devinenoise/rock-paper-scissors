@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+</head>
+
+<header>
+    <h1>Rock Paper Scissors Game</h1>
+</header>
+
+<body>
+    <section>
+        <div>
+            <h1>The Rules:</h1>
+            <span>
+                <ul id="rules">
+                    <li class="list">| Rock Beats Scissors |</li>
+                    <li class="list">| Paper Beats Rock |</li>
+                    <li class="list">| Scissors Beats Paper |</li>
+                </ul>
+            </span>
+        </div>
+    </section>
+    <main>
+        <section>
+            <p>
+                <div id=radio-container>
+                    <label>
+                        <input type="radio" name="human-choice" value="rock" checked>
+                        <img class="radio-image" src="/rock.jpg" alt="rock">
+                    </label>
+                    <label>
+                        <input type="radio" name="human-choice" value="paper">
+                        <img class="radio-image" src="/paper.jpg" alt="paper">
+                    </label>
+                    <label>
+                        <input type="radio" name="human-choice" value="scissors">
+                        <img class="radio-image" src="/scissors.jpg" alt="scissors">
+                    </label>
+            </p>
+            </div>
+
+            <p id="record">
+                <span>Wins: <span class="count" id="win-count">0</span>
+                    <span>Losses: <span class="count" id="loss-count">0</span>
+                        <span>Draws: <span class="count" id="draw-count">0</span>
+            </p>
+        </section>
+
+        <section>
+            <p><button id="play-button">Play</button>
+                <span><button id="reset-button">Reset</button></span>
+            </p>
+
+            <div id="game-display" class="hidden">
+                <span id="computer-throw"></span>
+                <div></div>
+                <span id="match-results"></span>
+            </div>
+        </section>
+        <script type="module" src="app.js"></script>
+    </main>
+</body>
+
+</html>
